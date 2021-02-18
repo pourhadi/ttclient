@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		3762C38125DE7C9C0017EA28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762C36C25DE7C9B0017EA28 /* ContentView.swift */; };
 		3762C38225DE7C9C0017EA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3762C36D25DE7C9C0017EA28 /* Assets.xcassets */; };
 		3762C38325DE7C9C0017EA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3762C36D25DE7C9C0017EA28 /* Assets.xcassets */; };
+		3762C39025DE7CD70017EA28 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 3762C38F25DE7CD70017EA28 /* Starscream */; };
+		3762C39525DE7D010017EA28 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 3762C39425DE7D010017EA28 /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3762C39025DE7CD70017EA28 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3762C39525DE7D010017EA28 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 				3762C37425DE7C9C0017EA28 /* iOS */,
 				3762C37B25DE7C9C0017EA28 /* macOS */,
 				3762C37325DE7C9C0017EA28 /* Products */,
+				3762C39325DE7D010017EA28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +95,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		3762C39325DE7D010017EA28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +118,9 @@
 			dependencies = (
 			);
 			name = "ttClient (iOS)";
+			packageProductDependencies = (
+				3762C38F25DE7CD70017EA28 /* Starscream */,
+			);
 			productName = "ttClient (iOS)";
 			productReference = 3762C37225DE7C9C0017EA28 /* ttClient.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +138,9 @@
 			dependencies = (
 			);
 			name = "ttClient (macOS)";
+			packageProductDependencies = (
+				3762C39425DE7D010017EA28 /* Starscream */,
+			);
 			productName = "ttClient (macOS)";
 			productReference = 3762C37A25DE7C9C0017EA28 /* ttClient.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 3762C36525DE7C9A0017EA28;
+			packageReferences = (
+				3762C38E25DE7CD70017EA28 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = 3762C37325DE7C9C0017EA28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +460,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3762C38E25DE7CD70017EA28 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3762C38F25DE7CD70017EA28 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3762C38E25DE7CD70017EA28 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		3762C39425DE7D010017EA28 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3762C38E25DE7CD70017EA28 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3762C36625DE7C9A0017EA28 /* Project object */;
 }
